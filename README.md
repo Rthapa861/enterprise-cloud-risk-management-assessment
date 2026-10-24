@@ -1,72 +1,63 @@
-
 # Enterprise Cloud Risk Management Assessment
+
+**NIST Risk Management Framework (RMF) | AWS Security | Governance, Risk & Compliance (GRC)**
 
 ## Project Overview
 
-This academic project applies the NIST Risk Management
-Framework (RMF) to a simulated government AWS environment
-supporting HR, financial, and monitoring applications.
+This academic project applied the NIST Risk Management Framework to a simulated government information system operated by the fictional State Institute of Science and Technology (SIST).
 
-The assessment focused on security categorization,
-identifying potential risks, evaluating selected security
-controls, and documenting recommendations to support
-risk management and continuous monitoring.
+The assessment focused on the AWS-hosted SIST Web Infrastructure System, supporting HR, GMAT, and FCIN applications. Using the high-water-mark approach, the system was categorized as **High impact** for confidentiality, integrity, and availability.
 
-## Key Activities
-
-- Identified system boundaries and categorized information
-  types based on confidentiality, integrity, and availability.
-- Applied NIST RMF and NIST SP 800-53 guidance to assess
-  selected security controls.
-- Developed System Security Plan (SSP) documentation and
-  evaluated the AU-2 audit events control.
-- Documented risk management recommendations and
-  continuous monitoring strategies.
-
-## Project Deliverables
-
-The following documents demonstrate the assessment
-process and supporting documentation.
-
-1. [Executive Summary](deliverables/Executive%20Summary.pdf)
-2. [Security Categorization](deliverables/RMF_Categorization.pdf)
-3. [System Security Plan](deliverables/RMF_System_Security_Plan.pdf)
-4. [AU-2 Security Control Assessment](deliverables/RMF_AU2_Control_Assessment.pdf)
-5. [Continuous Monitoring](deliverables/RMF_Continuous%20monitoring.pdf)
-
-## System Architecture
-
-The diagram below illustrates the simulated AWS
-infrastructure used as the basis for the assessment.
-
-![Simulated AWS Web Infrastructure](images/Simulated%20AWS%20Web%20Infrastructure.png)
-
-## Frameworks and Technologies
-
-- NIST Risk Management Framework (RMF)
-- NIST SP 800-53
-- NIST SP 800-60
-- AWS IAM
-- AWS CloudTrail
-- Amazon CloudWatch
-- Amazon S3
-
-## Skills Demonstrated
-
-- Enterprise Risk Assessment
-- Security Categorization
-- Security Control Assessment
-- Governance, Risk, and Compliance (GRC)
-- Security Documentation
-- Continuous Monitoring Planning
-- Cloud Security Risk Management
+The project involved security categorization, System Security Plan (SSP) development, audit-event control assessment planning, and continuous monitoring strategy development.
 
 ## Project Scope
 
-This project was completed in an academic setting
-using a simulated AWS environment. The assessment
-does not represent a security audit of an actual
-government organization or production infrastructure.
+The proposed AWS environment includes:
+
+- Amazon EC2 web, application, and database servers
+- AWS Identity and Access Management (IAM)
+- AWS CloudTrail for API activity logging
+- Amazon CloudWatch Logs for system and application logging
+- Amazon S3 for audit log storage
+- AWS Config for proposed configuration compliance monitoring
+
+The assessment also considered external system interconnections and a hypothetical migration from Azure to AWS and the SIST Data Center.
+
+## NIST RMF Activities
+
+| RMF Activity | Work Performed |
+|---|---|
+| Categorize | Evaluated confidentiality, integrity, and availability impact levels and determined system categorization |
+| Select & Document | Developed SSP documentation and identified relevant security requirements |
+| Assess | Prepared an AU-2 Audit Events control assessment plan using examine, interview, and test methods |
+| Monitor | Developed an ISCM strategy, identified security metrics, and analyzed infrastructure migration risks |
+
+## Project Deliverables
+
+- [Executive Summary](deliverables/Executive%20Summary.pdf)
+- [Security Categorization](deliverables/RMF_Categorization.pdf)
+- [System Security Plan (SSP)](deliverables/RMF_System_Security_Plan.pdf)
+- [AU-2 Control Assessment Plan](deliverables/RMF_AU2_Control_Assessment.pdf)
+- [Continuous Monitoring Strategy](deliverables/RMF_Continuous%20monitoring.pdf)
+
+## Frameworks and Technologies
+
+**Frameworks:** NIST RMF, NIST SP 800-53, NIST SP 800-53A, NIST SP 800-60, NIST SP 800-137
+
+**Cloud Security:** AWS IAM, CloudTrail, CloudWatch Logs, Amazon S3, AWS Config
+
+**GRC Skills:** Security categorization, control assessment planning, SSP documentation, risk identification, continuous monitoring, and POA&M planning
+
+## Key Recommendations
+
+- Implement automated configuration compliance monitoring.
+- Strengthen identity and privileged access management.
+- Establish centralized security logging and monitoring.
+- Reassess security controls and authorization boundaries following significant infrastructure changes.
+
+## Project Limitations
+
+This project was completed as an academic simulation. The AWS architecture, monitoring services, and assessment procedures were proposed and documented rather than verified through a production deployment or completed technical control testing.
 
 
 ## Note
